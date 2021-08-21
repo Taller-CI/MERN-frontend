@@ -212,11 +212,11 @@ const PrivateScreen = ({ history }) => {
               </Card>
             </Grid>
 
-            {/* {userNotes.data.notes.map(exer => (
+            {userNotes.data.notes.map(exer => (
               <Grid className={classes.root} item xs={12} sm={3}>
                 <NotePreview  Title = {exer.title} Body = {exer.body} NID = {exer.id}/>
               </Grid>
-            ))}   */}
+            ))}  
 
             
           </Grid>
@@ -238,7 +238,7 @@ const PrivateScreen = ({ history }) => {
           <div className={classes.paper}>
             <CreateNote />
           </div>
-          <div><pre>{JSON.stringify(userNotes, null, 2) }</pre></div>;
+          
         </Fade>
       </Modal>
     </>
